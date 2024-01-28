@@ -33,12 +33,20 @@
 <body>
   <div id="app">
     <div class="absolute text-white text-center" style="top:50%; transform: translate(-50%, -50%); left:50%;;">
-      <h1 class="oswald-text text-2xl">This Is Stemwork<br>by Harry</h1>
-      <p class="roboto-regular-italic text-4xl">
+      <h1 class="oswald-text text-2xl opacity-0" id="Stemwork" style="transform: translateY(30px);">This Is Stemwork<br>by Harry</h1>
+      <p class="roboto-regular-italic text-4xl opacity-0" id="text1" style="transform: translateY(30px);">
         Click the text below and get the source code<br>
       </p>
-      <a href="https://github.com/hariquasar/First-Three-js" class="oswald-text border px-4 py-2 rounded-lg text-sm uppercase">source code</a>
-      <button class="oswald-text border px-4 py-2 rounded-lg text-sm mt-12 hover:bg-white hover:text-gray-800">View More</button>
+      <div class="grid my-5">
+        <div>
+      <p class="roboto-regular-italic text-4xl opacity-0" id="text1" style="transform: translateY(30px);">
+        <a id="ahref1"  href="https://github.com/hariquasar/First-Three-js" class="oswald-text border px-4 py-2 rounded-lg text-sm uppercase opacity-0">source code</a>
+        </div>
+        <div>
+      <p class="roboto-regular-italic text-4xl opacity-0" id="text1" style="transform: translateY(30px);">
+        <button id="button1"  class="oswald-text border px-4 py-2 rounded-lg text-sm mt-4 hover:bg-white hover:text-gray-800 opacity-0">View More</button>
+        </div>
+      </div>
     </div>
   </div>
   <script type="module" src="/main.js"></script>

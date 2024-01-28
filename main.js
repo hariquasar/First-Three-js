@@ -195,3 +195,34 @@ addEventListener('mousemove', e => {
   mouse.y = -(e.clientY / innerHeight) * 2 + 1
 
 })
+
+gsap.to('#Stemwork',{
+  opacity: 1,
+  duration: 1.5,
+  y: 0,
+  ease: 'expo'
+})
+
+gsap.to('#text1',{
+  opacity: 1,
+  duration: 1.5,
+  delay: 0.3,
+  y: 0,
+  ease: 'expo'
+})
+
+gsap.to('#ahref1',{
+  opacity: 1,
+  duration: 1.5,
+  y: 0,
+  delay: 0.6,
+  ease: 'expo'
+})
+
+gsap.to('#button1',{
+  opacity: 1,
+  duration: 1.5,
+  y: 0,
+  delay: 0.9,
+  ease: 'expo'
+})
