@@ -50,7 +50,7 @@ function generatePlane() {
 
   const colors = []
   for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++) {
-    colors.push(0, 0.19, 0.4)
+    colors.push(0.18,0.42,0.31)
   }
 
   planeMesh.geometry.setAttribute(
@@ -153,30 +153,30 @@ function animate() {
   if (intersects.length > 0) {
     const { color } = intersects[0].object.geometry.attributes
 
-    color.setX(intersects[0].face.a, 0.1)
-    color.setY(intersects[0].face.a, 0.5)
-    color.setZ(intersects[0].face.a, 1)
+    color.setX(intersects[0].face.a, 0.72)
+    color.setY(intersects[0].face.a, 0.89)
+    color.setZ(intersects[0].face.a, 0.78)
 
-    color.setX(intersects[0].face.b, 0.1)
-    color.setY(intersects[0].face.b, 0.5)
-    color.setZ(intersects[0].face.b, 1)
+    color.setX(intersects[0].face.b, 0.72)
+    color.setY(intersects[0].face.b, 0.89)
+    color.setZ(intersects[0].face.b, 0.78)
 
-    color.setX(intersects[0].face.c, 0.1)
-    color.setY(intersects[0].face.c, 0.5)
-    color.setZ(intersects[0].face.c, 1)
+    color.setX(intersects[0].face.c, 0.72)
+    color.setY(intersects[0].face.c, 0.89)
+    color.setZ(intersects[0].face.c, 0.78)
 
     intersects[0].object.geometry.attributes.color.needsUpdate = true
 
     const initialColor = {
-      r: 0,
-      g: 0.19,
-      b: 0.4
+      r: 0.18,
+      g: 0.42,
+      b: 0.31
     }
 
     const hoverColor = {
-      r: 0.1,
-      g: 0.5,
-      b: 1
+      r: 0.72,
+      g: 0.89,
+      b: 0.78
     }
 
     gsap.to(hoverColor, {
@@ -264,7 +264,10 @@ document.querySelector('#button1').addEventListener('click', (e) => {
     y: 1500,
     ease: 'power3.in',
     duration: 1,
-    delay: 2
+    delay: 2,
+    onComplete: () => {
+        window.location = "https://www.google.com/"
+    }
   })
 })
 
